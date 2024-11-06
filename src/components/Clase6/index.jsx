@@ -1,6 +1,7 @@
 import ComponenteB from "./ComponenteB";
 
 export default function Clase6() {
+
   return (
     <>
       <ComponenteB />
