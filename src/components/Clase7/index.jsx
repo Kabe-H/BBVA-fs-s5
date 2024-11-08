@@ -5,7 +5,6 @@ export default function Clase7() {
   const [mail, setMail] = useState("");
   const [suscribed, setSuscribed] = useState(false);
 
-console.log(setSuscribed);
 
   return (
     <>
