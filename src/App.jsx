@@ -1,16 +1,12 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Clase10 from "./components/Clase10";
 import Clase11 from "./components/Clase11";
 import Clase12 from "./components/Clase12";
-import Clase2 from "./components/Clase2";
-import Clase3 from "./components/Clase3";
-import Clase5 from "./components/Clase5";
+import Home from "./components/Clase13/Home";
+import NotFound from "./components/Clase13/NotFound";
 import Clase6 from "./components/Clase6";
-import Clase7 from "./components/Clase7";
-import Clase8 from "./components/Clase8";
-import Clase9 from "./components/Clase9";
-import GenerarTarea from "./components/Clase9/LiveCoding/GenerarTarea";
 import Page from "./components/UI/page";
+import Clase14 from "./components/Clase14";
 
 function App() {
   const usuarios = [
@@ -21,8 +17,14 @@ function App() {
 
   return (
     <Page>
-     {/* <Clase11/> */}
-    <Clase12/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Clase12" element={<Clase12 />} />
+        <Route path="/Clase11" element={<Clase11 />} />
+        <Route path="/Clase14" element={<Clase14 />} />
+        <Route path="/Clase6" element={<Clase6 />} />
+        <Route path="*" element={<NotFound to="/404" replace />} />
+      </Routes>
     </Page>
   );
 }
