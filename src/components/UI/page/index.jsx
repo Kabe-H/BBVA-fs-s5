@@ -6,7 +6,7 @@ export default function Page({ children }) {
     <div className="ESTE ES MI PAGE">
       <Header />
       <h1>BBVA</h1>
-      {...children}
+      {children}
       <Footer />
     </div>
   );

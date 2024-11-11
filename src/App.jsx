@@ -1,5 +1,7 @@
 import "./App.css";
 import Clase10 from "./components/Clase10";
+import Clase11 from "./components/Clase11";
+import Clase12 from "./components/Clase12";
 import Clase2 from "./components/Clase2";
 import Clase3 from "./components/Clase3";
 import Clase5 from "./components/Clase5";
@@ -19,18 +21,8 @@ function App() {
 
   return (
     <Page>
-      <h2>fs-w5</h2>
-      <Clase2 />
-      <Clase3 />
-      <Clase5 />
-      <Clase6 />
-      <Clase7 />
-      <Clase8 />
-      <Clase9 />
-      <GenerarTarea />
-      {usuarios.map((usuario) => (
-        <Clase10 key={usuario.id} user={usuario} />
-      ))}
+     {/* <Clase11/> */}
+    <Clase12/>
     </Page>
   );
 }
